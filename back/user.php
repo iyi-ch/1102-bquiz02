@@ -55,6 +55,11 @@
 
 getUsers();
 
+function reset(){
+        // console.log('123');
+        $("table input").val("")
+    }
+
 function reg() {
         let user = {
             acc: $("#acc").val(),

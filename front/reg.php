@@ -33,7 +33,7 @@
 <script>
     // 清空表單
     function reset(){
-        console.log('123');
+        // console.log('123');
         $("table input").val("")
     }
 

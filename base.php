@@ -49,7 +49,7 @@ class DB{
             $sql .= $arg[1];
         }
 
-        //echo $sql;
+        // echo $sql;
         return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
    }
    function find($arg){
@@ -148,7 +148,8 @@ function to($url){
 $Total=new DB('total');
 // $Totsl 這個變數是物件
 $User=new DB('user');
-
+$News=new DB('news');
+$Que=new DB('que');
 if(!isset($_SESSION['total'])){
     $chkDate=$Total->math('count','id',['date'=>date("Y-m-d")]);
     if($chkDate>=1){
