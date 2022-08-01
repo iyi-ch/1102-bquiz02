@@ -19,6 +19,7 @@
 
 <script>
     function more(){
-        // let opt=`<div>選項<input type="text" name="option[]">
+        let opt=`<div>選項<input type="text" name="option[]"></div>`
+        $("#options").append(opt)
     }
 </script>

@@ -101,10 +101,14 @@ function del(){
     $("table input[type='checkbox']:checked").each((idx,box)=>{
         ids.push($(box).val())
     })
+    // $.post("./api/del_user.php",{del:ids},()=>{
+    //     $.get("./api/users.php",(users)=>{
+    //         $("#users").html(users)
+    //     })
+    
     $.post("./api/del_user.php",{del:ids},()=>{
-        $.get("./api/users.php",(users)=>{
-            $("#users").html(users)
-        })
+        getUser()
+
     })
 }
 

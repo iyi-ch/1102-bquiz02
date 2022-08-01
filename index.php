@@ -11,12 +11,25 @@
 	<link href="./css/css.css" rel="stylesheet" type="text/css">
 	<script src="./js/jquery-3.4.1.min.js"></script>
 	<script src="./js/js.js"></script>
+<style>
+	 .modal {
+        background: rgba(51, 51, 51, 0.8);
+        color: #FFF;
+        height: 410px;
+        width: 500px;
+        position: fixed;
+        display: none;
+        z-index: 9999;
+        overflow: auto;
+		padding:5px;
+		box-shadow: 0 0 10px #ccc;
+    }
+</style>
+
 </head>
 
 <body>
-	<div id="alerr" style="background:rgba(51,51,51,0.8); color:#FFF; min-height:100px; width:300px; position:fixed; display:none; z-index:9999; overflow:auto;">
-		<pre id="ssaa"></pre>
-	</div>
+
 
 	<div id="all">
 		<div id="title">
