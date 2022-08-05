@@ -15,3 +15,4 @@ foreach($rows as $row){
     echo $row['title'];
     echo "<a>";
 }
+?>

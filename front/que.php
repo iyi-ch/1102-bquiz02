@@ -25,6 +25,7 @@
                         echo "請先登入";
                     }else{
                         echo "<a href='?do=vote&id={$subject['id']}'>參與投票</a>";
+                       
                     }
 
                 ?>

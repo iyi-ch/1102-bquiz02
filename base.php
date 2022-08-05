@@ -53,7 +53,7 @@ class DB{
         return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
    }
    function find($arg){
-    $sql="select * from $this->table where";
+    $sql="select * from $this->table where ";
     
         if(is_array($arg)){
             foreach($arg as $key => $val){
@@ -67,7 +67,7 @@ class DB{
         }
    
 
-    //echo $sql;
+    // echo $sql;
     return $this->pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
    }
 

@@ -7,9 +7,9 @@ $option['count']++;
 $Que->save($option);
 
 $subject=$Que->find($option['subject_id']);
-$subject['count']--;
+$subject['count']++;
 $Que->save($subject);
-
+echo $subject['id'];
 to("../index.php?do=result&id=".$subject['id']);
 
 ?>

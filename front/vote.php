@@ -9,12 +9,17 @@ $options = $Que->all(['subject_id' => $_GET['id']]);
     <form action="./api/vote.php" method='post'>
         <?php
         foreach ($options as $opt) {
-            echo "<p>";
-            echo "<input type='radio' name='pot' value={$opt['id']}'>";
-            echo $opt['text'];
-            echo "</p>";
+            ?>
+
+            <p>
+            <input type='radio' name='opt' value='<?=$opt['id']?>'>
+            <?=$opt['text'];?>
+            </p>
+
+            <?php
         }
         ?>
+        
         <p class="ct">
             <input type="submit" value="我要投票">
         </p>
